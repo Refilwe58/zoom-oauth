@@ -8,7 +8,10 @@ const request = require('request')
 const express = require('express')
 const app = express()
 //const ngrok = require('ngrok');
+app.get('/test', (req, res) => {
+res.send(44544554)
 
+})
 
 app.get('/redirect', (req, res) => {
    res.send(44545);
