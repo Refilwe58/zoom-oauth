@@ -11,7 +11,7 @@ const app = express()
 
 
 app.get('/redirect', (req, res) => {
-
+   res.send(44545);
    // const url = await ngrok.connect();
 
     // Step 1: 
@@ -102,7 +102,8 @@ app.get('/redirect', (req, res) => {
     //Step 2: 
     // If no authorization code is available, redirect to Zoom OAuth to authorize
     //res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=${process.env.clientID}&redirect_uri=${encodeURI(process.env.redirectURL)}`));
-    res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=Qa5DRSJzQuGNpn3JbYIqQ&redirect_uri=https%3A%2F%2Fwild-gold-slacks.cyclic.app%2Fredirect`));
+    // res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=Qa5DRSJzQuGNpn3JbYIqQ&redirect_uri=https%3A%2F%2Fwild-gold-slacks.cyclic.app%2Fredirect`));
+
    console.log("redirect");
 });
 // app.get('/redirect', (req, res) => {
