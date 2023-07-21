@@ -87,6 +87,7 @@ app.get('/redirect', (req, res) => {
             // } else {
             //     // Handle errors, something's gone wrong!
             //     res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=Qa5DRSJzQuGNpn3JbYIqQ&redirect_uri=http%3A%2F%2Flocalhost%3A4000%2Fredirect`));
+           
             //     console.log("token not found")
             // }
 
@@ -102,6 +103,7 @@ app.get('/redirect', (req, res) => {
     // If no authorization code is available, redirect to Zoom OAuth to authorize
     //res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=${process.env.clientID}&redirect_uri=${encodeURI(process.env.redirectURL)}`));
     res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=Qa5DRSJzQuGNpn3JbYIqQ&redirect_uri=https%3A%2F%2Fwild-gold-slacks.cyclic.app%2Fredirect`));
+   console.log("redirect");
 });
 // app.get('/redirect', (req, res) => {
 //   console.log("query code:",req.query.code);
