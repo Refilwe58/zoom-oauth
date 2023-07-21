@@ -172,7 +172,7 @@ app.get('/redirect', (req, res) => {
 
             } else {
                 // Handle errors, something's gone wrong!
-                res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=Qa5DRSJzQuGNpn3JbYIqQ&redirect_uri=http%3A%2F%2Flocalhost%3A4000%2Fredirect`));
+                res.redirect(encodeURI(`https://zoom.us/oauth/authorize?response_type=code&client_id=Qa5DRSJzQuGNpn3JbYIqQ&redirect_uri=https%3A%2F%2Fwild-gold-slacks.cyclic.app%2Fredirect`));
                 console.log("token not found")
             }
 
