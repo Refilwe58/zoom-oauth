@@ -26,7 +26,7 @@ app.get('/redirect', (req, res) => {
         // Step 3: 
         // Request an access token using the auth code
 
-        let url = 'https://zoom.us/oauth/token?grant_type=authorization_code&code=' + req.query.code + '&redirect_uri=${encodeURI(process.env.redirectURL)}' ;
+        let url = 'https://zoom.us/oauth/token?grant_type=authorization_code&code=' + req.query.code + '&redirect_uri=https%3A%2F%2Fwild-gold-slacks.cyclic.app%2Fredirect' ;
 
         request.post(url, (error, response, body) => {
 
